@@ -1,16 +1,41 @@
-# React + Vite
+# MEXXA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MEXXA es un catálogo streetwear desarrollado como proyecto final de TripleTen. Permite explorar camisas y playeras, buscar prendas y consultar su foto y descripción. Está hecho con React, React Router, Vite y CSS.
 
-Currently, two official plugins are available:
+## Ejecutar en local
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Usa Node.js 24 y npm. Ejecuta estos comandos desde la raíz de tu copia de `mexxa-frontend`.
 
-## React Compiler
+```sh
+npm ci
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Vite abre la aplicación en el navegador. También puedes usar la dirección que aparece en la terminal, normalmente [localhost:5173](http://localhost:5173/).
 
-## Expanding the ESLint configuration
+## Rutas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Ruta | Contenido |
+| --- | --- |
+| `/` | Presentación de MEXXA y enlaces a Catálogo y Sobre mí. |
+| `/catalogo` | Buscador, tarjetas de prendas y ventana de detalles. |
+| `/About` | Información sobre el autor. |
+
+## Probar el catálogo
+
+1. Desde Inicio, pulsa **Explorar catálogo**. Verás las primeras tres prendas. Pulsa **Mostrar más** para ver el siguiente grupo.
+2. Busca `plaid` y abre **Ver detalles** en la tarjeta de **Man Plaid Shirt**. El diálogo muestra su foto y descripción. Puedes cerrarlo con la **X**, **Escape** o un clic fuera.
+3. Envía el buscador vacío para ver la validación. Busca `mexxa-sin-coincidencias-2603` para ver el estado sin resultados.
+
+El catálogo obtiene los datos de ejemplo de la categoría `mens-shirts` de DummyJSON. La búsqueda conserva esa categoría. Se requiere conexión a Internet para cargar los productos y sus imágenes. [Documentación de DummyJSON](https://dummyjson.com/docs/products)
+
+MEXXA usa Inter Variable como fuente local. [Licencia de Inter](src/vendor/fonts/LICENSE.txt)
+
+## Verificaciones
+
+```sh
+npm run lint
+npm run build
+```
+
+La compilación de producción se genera en `dist/`.
