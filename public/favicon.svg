@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>MEXXA</title>
+  <rect width="64" height="64" rx="14" fill="#16171d"/>
+  <path fill="#f3f4f6" d="M13 47V17h8l11 14 11-14h8v30h-8V29L32 43 21 29v18z"/>
+</svg>

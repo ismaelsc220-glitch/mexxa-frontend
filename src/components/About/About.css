@@ -1,0 +1,15 @@
+.about {
+  width: min(100%, 960px);
+  margin: 0 auto;
+  padding: clamp(24px, 6vw, 72px) 16px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.about__title {
+  margin: 0 0 16px;
+}
+
+.about__description {
+  max-width: 60ch;
+}

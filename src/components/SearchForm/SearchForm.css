@@ -1,0 +1,41 @@
+.search-form {
+  max-width: 520px;
+  margin: 0 auto 24px;
+  text-align: left;
+}
+
+.search-form__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.search-form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.search-form__input,
+.search-form__button {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: inherit;
+  font: inherit;
+}
+
+.search-form__input {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.search-form__button {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.search-form__error {
+  margin-top: 8px;
+  font-weight: 600;
+}
